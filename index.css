@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 568px) {
+  .slideshow {
+    height: 500px;
+    width: 100vw;
+    background-color: red;
+    -webkit-animation-name: change_picture;
+            animation-name: change_picture;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+  }
+  @-webkit-keyframes change_picture {
+    from {
+      background-color: red;
+    }
+    to {
+      background-color: yellow;
+    }
+  }
+  @keyframes change_picture {
+    from {
+      background-color: red;
+    }
+    to {
+      background-color: yellow;
+    }
+  }
+}
+/*# sourceMappingURL=index.css.map */

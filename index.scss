@@ -1,0 +1,27 @@
+$palegreen:#ccffcc;
+$light-lime:#f1ffc9;
+$mint:#b3ffb3;
+$font-family: Merriweather, Arial, sans-serif;
+$darkblue:#000066;
+$creme-page:#ffffe6;
+$border1px: solid 1px;
+
+*{
+    padding:0;
+    margin:0;
+}
+
+@media only screen and (max-width: 568px){
+.slideshow{
+height:500px;
+width:100vw;
+background-color: red;
+animation-name:change_picture;
+animation-duration: 4s;
+
+@keyframes change_picture{
+from {background-color: red;}
+to {background-color: yellow;}
+}
+}
+}
