@@ -80,3 +80,41 @@ align-items: center;
         display:none;
     }
 }
+
+
+@media only screen and (min-width: 750px){
+
+    
+    
+     
+    .image--active{
+display:flex;
+justify-content: center;
+align-items: center;
+    
+  
+    .image{
+        height:250px;
+        width:100vw;
+        display:block;
+
+        &__numbertext{
+            color:red;
+        }
+        &__text{
+            font-size:35px;
+            position:absolute;
+            color:$palegreen;
+            
+
+        }
+    }
+}
+    
+    .image--next{
+        display:none;
+    }
+    .image--previous{
+        display:none;
+    }
+}

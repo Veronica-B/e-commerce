@@ -61,4 +61,37 @@
     display: none;
   }
 }
+
+@media only screen and (min-width: 750px) {
+  .image--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .image--active .image {
+    height: 250px;
+    width: 100vw;
+    display: block;
+  }
+  .image--active .image__numbertext {
+    color: red;
+  }
+  .image--active .image__text {
+    font-size: 35px;
+    position: absolute;
+    color: #ccffcc;
+  }
+  .image--next {
+    display: none;
+  }
+  .image--previous {
+    display: none;
+  }
+}
 /*# sourceMappingURL=index.css.map */

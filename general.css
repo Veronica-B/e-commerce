@@ -8,76 +8,81 @@
 .background_color {
   background-color: #ffffe6;
 }
+.navigation__items:hover {
+  color: #ffffe6;
+  background-color: #000066;
+  padding: 15px;
+  border-radius: 10%;
+}
+.active {
+  color:#000066;
+  background-color: #f1ffc9;
+  padding: 15px;
+  border-radius: 10%;
+  -webkit-box-shadow: -2px -2px #000066;
+          box-shadow: -2px -2px #000066;
+}
+.navigation {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ccffcc;
+  height: 100px;
+  width: 100%;
+  border-bottom: solid 1px #b3ffb3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 
-/*DESKTOP VERSION*/
+.navigation__company_logo {
+  height: 100px;
+  width: 100px;
+}
 
-@media only screen and (min-width: 1000px) {
-  /*TOP AND BOTTOM OF PAGE IG NAV AND FOOTER STYLINGS*/
-  .navigation__items:hover {
-    color: #ffffe6;
-    background-color: #000066;
-    padding: 15px;
-    border-radius: 10%;
-  }
-  .active {
-    color: #ffffe6;
-    background-color: #f1ffc9;
-    padding: 15px;
-    border-radius: 10%;
-    -webkit-box-shadow: -2px -2px #000066;
-            box-shadow: -2px -2px #000066;
-  }
-  .navigation {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    background-color: #ccffcc;
-    height: 100px;
-    width: 100%;
-    border-bottom: solid 1px #b3ffb3;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .navigation__company_logo {
-    height: 100px;
-    width: 100px;
-  }
-  .navigation__icon {
-    height: 40px;
-    width: 40px;
-  }
-  .navigation__options {
-    list-style-type: none;
-    font-size: 25px;
-  }
-  .navigation__items {
-    color: #000066;
-    font-family: Merriweather, Arial, sans-serif;
-    text-decoration: none;
-  }
-  .footer {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: #ccffcc;
-    height: 100px;
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-bottom: solid 1px #b3ffb3;
-  }
-  .footer__icon {
-    height: 40px;
-    width: 40px;
-  }
+
+.navigation__icon {
+  height: 40px;
+  width: 40px;
+}
+
+.navigation__options {
+  list-style-type: none;
+  font-size: 25px;
+}
+
+.navigation__items {
+  color: #000066;
+  font-family: Merriweather, Arial, sans-serif;
+  text-decoration: none;
+}
+
+
+.footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ccffcc;
+  height: 100px;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px #b3ffb3;
+}
+.footer__icon {
+  height: 40px;
+  width: 40px;
+}
+ 
+
   /*THE PRODUCT AKA BOOKS STYLING THIS IS APPLIED TO PRODUCTS PAGE AND INDEX*/
+  
   .products {
     height: 85vh;
     width: 100%;
@@ -132,70 +137,13 @@
     margin-top:10%;
     font-size:150px;
 }
-}
+
 
 /*TABLET LANDSACPE MODE*/
 @media only screen and (min-width: 750px) and (max-width:1100px)and (orientation:landscape){
-  .active {
-    color: #ffffe6;
-    background-color: #f1ffc9;
-    padding: 15px;
-    border-radius: 10%;
-    -webkit-box-shadow: -2px -2px #000066;
-            box-shadow: -2px -2px #000066;
-  }
-  .navigation {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    background-color: #ccffcc;
-    height: 100px;
-    width: 100%;
-    border-bottom: solid 1px #b3ffb3;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .navigation__company_logo {
-    height: 100px;
-    width: 100px;
-  }
-  .navigation__icon {
-    height: 40px;
-    width: 40px;
-  }
-  .navigation__options {
-    list-style-type: none;
-    font-size: 25px;
-  }
-  .navigation__items {
-    color: #000066;
-    font-family: Merriweather, Arial, sans-serif;
-    text-decoration: none;
-  }
-  .footer {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: #ccffcc;
-    height: 100px;
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-bottom: solid 1px #b3ffb3;
-  }
-  .footer__icon {
-    height: 40px;
-    width: 40px;
-  }
+
   .products {
-    height: 90vh;
+    height: 65vh;
     width: 100%;
     border-bottom: solid 1px #000066;
     display: -webkit-box;
@@ -213,53 +161,19 @@
     margin: 12% 0 4% 1%;
     border: solid 1px #000066;
   }
-  .products__title {
-    font-size: 35px;
-    margin: 2%;
-    color: #000066;
-    text-align: center;
-  }
+  
   .products__paragraph {
     font-size: 20px;
     margin: 10% 10% 0 45%;
     color: #000066;
     text-align: center;
   }
-  .products__paragraph__price {
-    display: block;
-    margin-top: 8%;
-    font-size: 23px;
-  }
-  .products__button {
-    background-color: #ccffcc;
-    border-radius: 10px;
-    color: #000066;
-    -webkit-box-shadow: 1px 2px #000066;
-            box-shadow: 1px 2px #000066;
-    font-size: 20px;
-    height: 75px;
-    width: 250px;
-    margin: 8% 0 0 55%;
-    padding: 10px 15px 10px 15px;
-  }
-  .title {
-    color: #000066;
-    text-align: center;
-    margin-top: 5%;
-    font-size: 45px;
-  }
+ 
 }
 
 /*TABLET POTRAIT nav w/ shopping cart and name of site*/
-@media only screen and (min-width:750px) and (max-width: 1119px){
-  .active {
-    color: #ffffe6;
-    background-color: #f1ffc9;
-    padding: 15px;
-    border-radius: 10%;
-    -webkit-box-shadow: -2px -2px #000066;
-            box-shadow: -2px -2px #000066;
-  }
+@media only screen and (min-width:569px) and (max-width: 1119px){
+
   /*Side Navigation*/
   .side_navigation_mobile {
     display: none;
@@ -294,56 +208,10 @@
     background: #b3ffb3;
     color: #000066;
   }
-  .navigation {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    background-color: #ccffcc;
-    height: 100px;
-    width: 100%;
-    border-bottom: solid 1px #b3ffb3;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .navigation__company_logo {
-    height: 100px;
-    width: 100px;
-  }
-  .navigation__icon {
-    height: 40px;
-    width: 40px;
-  }
-  .navigation__options {
-    list-style-type: none;
-    font-size: 25px;
-  }
-  .navigation__items {
-    color: #000066;
-    font-family: Merriweather, Arial, sans-serif;
-    text-decoration: none;
-  }
-  .footer {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: #ccffcc;
-    height: 100px;
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-bottom: solid 1px #b3ffb3;
-  }
-  .footer__icon {
-    height: 40px;
-    width: 40px;
-  }
+ 
+ 
+ 
+  
   .products {
     height: 97vh;
     width: 100%;
@@ -362,6 +230,7 @@
             align-items: center;
   }
   .products__images {
+    position: relative;
     height: 40%;
     width: 300px;
     margin: 3% 0 3% 1%;
@@ -432,14 +301,8 @@
     height: 25px;
     width: 25px;
   }
-  .navigation__options {
-    list-style-type: none;
-  }
-  .navigation__items {
-    text-decoration: none;
-    color: #000066;
-    font-family: Merriweather, Arial, sans-serif;
-  }
+  
+  
   .footer {
     position: relative;
     display: -webkit-box;
@@ -510,7 +373,9 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  
   .products__images {
+    position: relative;
     height: 40%;
     width: 175px;
     margin: 3% 0 3% 1%;
@@ -546,7 +411,7 @@
     padding: 10px 15px 10px 15px;
   }
   .title {
-    color: #000066;
+  
     text-align: center;
     margin-top: 5%;
     font-size: 25px;
