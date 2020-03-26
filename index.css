@@ -3,31 +3,31 @@
   margin: 0;
 }
 
-@media only screen and (min-width: 1100px) {
-  .slideshow {
-    background-color: red;
-    margin: auto;
-    height: 300px;
-    width: 80vw;
-  }
-  .slideshow .image {
-    height: 250px;
-    width: 75vw;
-  }
-  .image--previous {
-    position: absolute;
-    left: -100%;
-    display: none;
-  }
-  .image--active {
-    position: absolute;
-    left: 0;
-  }
-  .image--next {
-    position: absolute;
-    left: 100%;
-    display: none;
-  }
+.slideshow {
+  height: 600px;
+  width: 100%;
+}
+
+.slideshow .image {
+  height: 250px;
+  width: 75vw;
+}
+
+.image--previous {
+  position: absolute;
+  left: -100%;
+  display: none;
+}
+
+.image--active {
+  position: absolute;
+  left: 0;
+}
+
+.image--next {
+  position: absolute;
+  left: 100%;
+  display: none;
 }
 
 @media only screen and (max-width: 568px) {
@@ -42,14 +42,20 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .image--active .image {
-    height: 250px;
-    width: 100vw;
+  .image--active .slideshow {
+    background-color: red;
+    margin: auto;
+    height: 300px;
+    width: 80vw;
   }
-  .image--active .image__numbertext {
+  .image--active .slideshow .image {
+    height: 250px;
+    width: 75vw;
+  }
+  .image--active .slideshow__numbertext {
     display: none;
   }
-  .image--active .image__text {
+  .image--active .slideshow__text {
     font-size: 35px;
     position: absolute;
     color: #ccffcc;
@@ -73,14 +79,23 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .image--active .image {
-    height: 250px;
     width: 100vw;
-    display: block;
   }
   .image--active .image__numbertext {
-    color: red;
+    position: absolute;
+    color: white;
+    opacity: 60%;
+    background-color: #000066;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+  }
+  .image--active .image {
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    display: block;
+    z-index: -1;
   }
   .image--active .image__text {
     font-size: 35px;
