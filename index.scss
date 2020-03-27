@@ -10,6 +10,8 @@ $border1px: solid 1px;
     padding:0;
     margin:0;
 }
+
+
 .slideshow{
   height:500px;
   width:100%;
@@ -21,15 +23,36 @@ $border1px: solid 1px;
 }
 }
 
+.arrow{
+    padding: 0 10px;
+    height:500px;
+    color:white;
+    font-size: 45px;
+    line-height:35vh;
+    opacity:60%;
+    background-color: $darkblue;
+    margin-left:-1px;
+}
+
+
+
+.image__numbertext{
+    position:absolute;
+    color:white;
+    opacity:60%;
+    background-color: $darkblue;
+    width:100%;
+    text-align: center;
+    bottom:0;
+
+}
+
 .image--previous{
     position: absolute;
     left: -100%;
     display:none;
 }
-.image--active{
-    position:absolute;
-    left:0;
-}
+
 
 .image--next{
     position:absolute;
@@ -43,13 +66,11 @@ $border1px: solid 1px;
 
 @media only screen and (max-width: 568px){
 
-    .arrow--left{
+    .arrow{
         display:none;
     }
 
-    .arrow--right{
-        display:none;
-    }
+   
 
     .slideshow{
         height:300px;
@@ -91,29 +112,52 @@ align-items: center;
     }
 }
 
+@media only screen and (min-width: 750px)and (orientation:portrait){
 
-@media only screen and (min-width: 750px){
-
-    .arrow--left{
-        padding: 0 10px;
-        height:500px;
-        color:white;
-        font-size: 45px;
-        line-height:35vh;
-        opacity:60%;
-        background-color: $darkblue;
+    .arrow{
+        display:none;
     }
 
-    .arrow--right{
-        padding: 0 10px;
-        height:500px;
-        color:white;
-        font-size: 45px;
-        line-height:35vh;
-        opacity:60%;
-        background-color: $darkblue;
-
+    .slideshow{
+        height:600px;
     }
+    
+     
+    .image--active{
+display:flex;
+justify-content: center;
+align-items: center;
+    
+  
+
+.image{
+    height:550px;
+    width:100vw;
+        &__numbertext{
+            display:none;
+        }
+        &__text{
+            font-size:55px;
+            position:absolute;
+            color:$darkblue;
+            
+
+        }
+    }
+}
+    
+    .image--next{
+        display:none;
+    }
+    .image--previous{
+        display:none;
+    }
+    }
+
+
+
+@media only screen and (min-width: 750px) and (orientation:landscape){
+
     
      
     .image--active{
@@ -122,19 +166,6 @@ justify-content: center;
 align-items: center;
 width:100vw;
     
-
-
-
-.image__numbertext{
-    position:absolute;
-    color:white;
-    opacity:60%;
-    background-color: $darkblue;
-    width:100%;
-    text-align: center;
-    bottom:0;
-
-}
 
 
 
