@@ -3,24 +3,20 @@ var right_ArrowId = document.getElementById('right-arrow');
 
 
 var i= 0;
+//0 1 2
 var images= ['img1.jpg', 'img2.jpg', 'img3.jpg']
 //10000 is equaled to 10 seconds.
 var time= 10000;
 
 
-function remove_Text(){
-    document.img.src =images[i];
-    if(i>0){
-        document.querySelector('image__text').textContent="wassup";
-    }
-}
+
+
 function change_Image(){
     //this works because I put name="img" on my html
     document.img.src =images[i];
 
     if(i < images.length-1 ){
-        i++;
-       
+        i++; 
     }else{
         i=0;
     }
@@ -30,12 +26,19 @@ function change_Image(){
 function change_Image_Reverse(){
     //this works because I put name="img" on my html
     document.img.src =images[i];
+        switch(i){
+            case 0:
+            i=0;
+            break;
 
-    if(i < images.length-1 && i > 0 ){
-        i--;
-    }else{
-        i=0;
-    }
+            case 1:
+            i=i-1;
+            break;
+            
+            case 2:
+            i=i-1;
+            break;    
+        }
 }
     
 setTimeout("change_Image()", time);
