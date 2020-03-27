@@ -11,7 +11,7 @@ $border1px: solid 1px;
     margin:0;
 }
 .slideshow{
-  height:600px;
+  height:500px;
   width:100%;
 
   
@@ -43,7 +43,17 @@ $border1px: solid 1px;
 
 @media only screen and (max-width: 568px){
 
-    
+    .arrow--left{
+        display:none;
+    }
+
+    .arrow--right{
+        display:none;
+    }
+
+    .slideshow{
+        height:300px;
+    }
     
      
     .image--active{
@@ -52,16 +62,12 @@ justify-content: center;
 align-items: center;
     
   
-.slideshow{
-    background-color: red;
-    margin:auto;
-    height:300px;
-    width:80vw;
 
 .image{
     height:250px;
-    width:75vw;
-}
+    width:100vw;
+
+
 
 
         &__numbertext{
@@ -70,7 +76,7 @@ align-items: center;
         &__text{
             font-size:35px;
             position:absolute;
-            color:$palegreen;
+            color:$darkblue;
             
 
         }
@@ -88,7 +94,26 @@ align-items: center;
 
 @media only screen and (min-width: 750px){
 
-    
+    .arrow--left{
+        padding: 0 10px;
+        height:500px;
+        color:white;
+        font-size: 45px;
+        line-height:35vh;
+        opacity:60%;
+        background-color: $darkblue;
+    }
+
+    .arrow--right{
+        padding: 0 10px;
+        height:500px;
+        color:white;
+        font-size: 45px;
+        line-height:35vh;
+        opacity:60%;
+        background-color: $darkblue;
+
+    }
     
      
     .image--active{
@@ -110,6 +135,9 @@ width:100vw;
     bottom:0;
 
 }
+
+
+
    
     .image{
     position:relative;
@@ -118,11 +146,11 @@ width:100vw;
         display:block;
         z-index:-1;
 
-        
+      
         &__text{
-            font-size:35px;
+            font-size:55px;
             position:absolute;
-            color:$palegreen;
+            color:$darkblue;
             
 
         }
