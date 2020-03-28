@@ -57,11 +57,12 @@ $border1px: solid 1px;
 .textarea{
     resize:none;
     display:block;
-    height:35vh;
+    height:25vh;
     width:70vw;
     margin:0 7% 0 7%;
     border: $border1px $darkblue;
     background-color:$creme-page;
+    font-size: 25px;
 }
 
 .button{
@@ -75,81 +76,30 @@ $border1px: solid 1px;
 
 
 
-@media only screen and (min-width: 569px){
-    .flexbox{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .container{
-        border-radius: 20%;
-        margin: 10%;
-        border: 2px solid $mint;
-        background-color: $light-lime;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    
+@media only screen and (min-width: 569px) and (max-width:999px){
     
     .message{
-        color:$darkblue;
-        text-align:center;
         margin-top:5%;
         font-size: 20px;
     }
     
     .label{
-        margin: 3%;
-        display:block;
-        color:$darkblue;
-        font-size: 30px;
-        text-align: center;
+        margin: 2%;
     }
     
-    .input-text{
-        height:50px;
-        font-size:25px;
-        width:50%;
-        background-color: #ffffe6;
-        border:none;
-        border: $border1px $darkblue;
-    }
-    
-    .textarea{
-        resize:none;
-        display:block;
-        height:35vh;
-        width:70vw;
-        margin:0 7% 0 7%;
-        border: $border1px $darkblue;
-        background-color:$creme-page;
-    }
-    
-    .button{
-        background-color:$palegreen;
-        border-radius: 10px ;
-        color:$darkblue;
-        font-size:25px;
-        margin:7% 39% 7% 39%;
-        padding:30px 45px 30px 45px;
-    }
-    
-    }
+}
     
 
 
 /*Contact Mobile*/
-@media only screen and (max-width: 568px){
+@media only screen and (max-width: 568px) and (orientation: portrait){
 
-   
-
+   .container{
+       background-color: $creme-page;
+       border: none;
+   }
+ 
 .message{
-    color:$darkblue;
-    text-align:center;
     margin-top:5%;
     font-size: 15px;
 }
@@ -165,27 +115,20 @@ $border1px: solid 1px;
 .input-text{
     margin: 2%;
     width:95%;
-    background-color: #ffffe6;
     border:none;
     border-bottom: $border1px $darkblue;
 }
 
 .textarea{
-    resize:none;
-    display:block;
-    height:35vh;
+    height:20vh;
+    font-size:14px;
     width:85vw;
-    flex-direction:center;
     margin:0 7% 0 7%;
-    border: $border1px $darkblue;
+    background-color: white;
 }
 
  .button{
-        background-color:$palegreen;
-        border-radius: 10px ;
-        color:$darkblue;
         font-size:15px;
-        margin:7% 39% 7% 39%;
         padding:10px 15px 10px 15px;
     }
 

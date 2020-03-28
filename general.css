@@ -82,37 +82,24 @@
  
 
   /*THE PRODUCT AKA BOOKS STYLING THIS IS APPLIED TO PRODUCTS PAGE AND INDEX*/
-  
-  .products {
-    height: 85vh;
-    width: 100%;
-    border-bottom: solid 1px #000066;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+
   .products__images {
-    position: absolute;
-    height: 55%;
-    width: 350px;
-    margin: 6% 0 4% 1%;
+    height: 150px;
+    width: 125px;
+    margin: 6% 0 4% 0%;
     border: solid 1px #000066;
   }
   .products__title {
-    font-size: 35px;
+    font-size: 20px;
     margin: 2%;
     color: #000066;
-    text-align: center;
+    
   }
   .products__paragraph {
-    font-size: 20px;
-    margin: 5% 10% 0 35%;
+    font-size: 15px;
+    margin: 5% 5% 0 5%;
     color: #000066;
-    text-align: center;
+  
   }
   .products__paragraph__price {
     display: block;
@@ -126,16 +113,23 @@
     -webkit-box-shadow: 1px 2px #000066;
             box-shadow: 1px 2px #000066;
     font-size: 20px;
-    height: 75px;
-    width: 350px;
-    margin: 8% 0 0 50%;
-    padding: 10px 15px 10px 15px;
+    height: 55px;
+    width: 150px;
+    margin-top: 3%;
+  
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(4, 70vh);
+    text-align: center;
   }
   .title{
     color:#000066;
     text-align:center;
-    margin-top:10%;
-    font-size:75px;
+    margin-top:3%;
+    font-size:55px;
 }
 
 
@@ -335,6 +329,9 @@
     background: #b3ffb3;
     color: #000066;
   }
+.grid{
+  display:block;
+}
   .products {
     height: 97vh;
     width: 100%;
