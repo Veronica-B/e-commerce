@@ -12,16 +12,32 @@ $border1px: solid 1px;
 }
 
 .filter-box{
-    height:45px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height:65px;
     width:100%;
     background-color: $palegreen;
     opacity:50%;
-    }
+}
     
     .filter-icon{
     height:25px;
     width:25px;
     margin:1% 0 0 2%;
+    }
+
+    .filter-button{  
+    height:25px;
+    background-color: $creme-page;
+    padding:10px;
+    box-shadow: 1px 2px $darkblue;
+    border-radius: 20%;
+    }
+
+    .filter-text{
+   font-size:23px;
+   color:$darkblue;
     }
     
 @media only screen and (max-width: 568px){

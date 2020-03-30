@@ -42,10 +42,22 @@
   font-size: 25px;
 }
 
+.navigation__options--hamburger {
+  list-style-type: none;
+}
+
 .navigation__items {
   color: #000066;
   font-family: Merriweather, Arial, sans-serif;
   text-decoration: none;
+}
+.navigation__icon--hamburger{
+  color: #000066;
+  font-family: Merriweather, Arial, sans-serif;
+  text-decoration: none;
+  height:60px;
+  width:50px;
+  display:none;
 }
 .navigation__items:hover {
   color: #ffffe6;
@@ -60,6 +72,45 @@
   border-radius: 10%;
   -webkit-box-shadow: -2px -2px #000066;
           box-shadow: -2px -2px #000066;
+}
+
+/*side navigation*/
+.side_navigation_mobile {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: solid 1px #000066;
+  position: fixed;
+  background-color: #f1ffc9;
+  height: 100vh;
+  width: 8rem;
+  overflow: hidden;
+  z-index: 1;
+}
+.side_navigation_mobile__options {
+  position: relative;
+  font-family: Merriweather, Arial, sans-serif;
+  color: #000066;
+  z-index: 6;
+  list-style-type: none;
+  padding: 10px;
+}
+.side_navigation_mobile__options__current {
+  padding: 0px 35px 19px 35px;
+  border-radius: 10px;
+  height: 25px;
+  background: #b3ffb3;
+  color: #000066;
+}
+
+.show{
+  display: block;
 }
 
 /*Footer*/
@@ -192,41 +243,6 @@
 }
 /*TABLET POTRAIT nav w/ shopping cart and name of site*/
 @media only screen and (min-width:569px) and (max-width: 1119px) and (orientation:portrait){
-
-  /*Side Navigation*/
-  .side_navigation_mobile {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    line-height: 50px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-right: solid 1px #000066;
-    position: fixed;
-    background-color: #f1ffc9;
-    height: 100vh;
-    width: 8rem;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .side_navigation_mobile__options {
-    position: relative;
-    font-family: Merriweather, Arial, sans-serif;
-    color: #000066;
-    z-index: 6;
-    list-style-type: none;
-    padding: 10px;
-  }
-  .side_navigation_mobile__options__current {
-    padding: 0px 35px 19px 35px;
-    border-radius: 10px;
-    height: 25px;
-    background: #b3ffb3;
-    color: #000066;
-  }
  
   .products__title{
     font-size: 25px;
@@ -254,8 +270,13 @@
 
 /*Mobile nav w/ shopping cart and name of site*/
 @media only screen and (max-width: 568px) {
-  .navigation {
-    height: 50px;
+  
+  .navigation__options {
+    display: none;
+  }
+
+  .navigation{
+    justify-content: right;
   }
 
   .navigation__company_logo {
@@ -265,7 +286,11 @@
   .navigation__icon {
     display:none;
   }
-  
+
+  .navigation__icon--hamburger{
+    display: block;
+  }
+
   .footer {
     height: 55px;
   }
