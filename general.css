@@ -108,9 +108,11 @@
   background: #b3ffb3;
   color: #000066;
 }
-.show{
-  display: block;
+
+.x{
+   display: none; 
 }
+
 
 /*Footer*/
 
@@ -291,6 +293,8 @@
   .navigation__options {
     display: none;
   }
+
+ 
 
   .navigation{
     justify-content: right;
