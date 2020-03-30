@@ -43,16 +43,25 @@ $border1px: solid 1px;
     
 @media only screen and (max-width: 568px){
    .filter-box{
-    height:25px;
+    margin-top: -4px;
+    height:70px;
     width:100%;
-    background-color: $palegreen;
-    opacity:50%;
+    flex-wrap: wrap;
    }
+
+   .filter-button{  
+    height:15px;
+    padding:5px;
+    }
+
+    .filter-text{
+   font-size:15px;
+    }
 
    .filter-icon{
     height:15px;
     width:15px;
-    margin:2%;
+    margin:0 2% 2% 2%;
    }
 
 }

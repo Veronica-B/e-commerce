@@ -1,10 +1,7 @@
 var left_ArrowId = document.getElementById('left-arrow');
 var right_ArrowId = document.getElementById('right-arrow');
-var hamburger_Icon= document.getElementsById('side-nav');
-var hamburger_Icon= document.getElementsById('name');
-
-console.log(hamburger_Icon);
 var i= 0;
+
 //0 1 2
 var images= ['img1.jpg', 'img2.jpg', 'img3.jpg'];
 //10000 is equaled to 10 seconds.
@@ -43,9 +40,6 @@ function change_Image_Reverse(){
         }
 }
 
-function show_Side_Nav(){
-    hamburger_Icon.classlist.toggle('show');
-}
     
 setTimeout("change_Image()", time);
 
@@ -58,5 +52,4 @@ left_ArrowId.addEventListener("click", change_Image_Reverse);
 right_ArrowId.addEventListener("click", change_Image);
 
 
-hamburger_Icon.addEventListener("click",show_Side_Nav);
 

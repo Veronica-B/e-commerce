@@ -108,7 +108,6 @@
   background: #b3ffb3;
   color: #000066;
 }
-
 .show{
   display: block;
 }
@@ -166,6 +165,8 @@
     margin-top: 8%;
     font-size: 23px;
   }
+
+  /*This is for desktop, mobile doesn't use this button.*/
   .products__button {
     background-color: #ccffcc;
     border-radius: 10px;
@@ -178,7 +179,7 @@
     margin:auto auto 15px auto;
     text-align: center;
   }
-
+/*This is for mobile, because the mobile doesn't use the same grid layout. */
   .products__button--mobile{
     display:none;
     background-color: #ccffcc;
@@ -197,7 +198,7 @@
     border-left:1px solid #000066;
     border-right:1px solid #000066;
   }
-  
+  /*products page,*/
   .grid{
     justify-content: center;
     display:grid;
@@ -293,6 +294,7 @@
 
   .navigation{
     justify-content: right;
+    height:70px;
   }
 
   .navigation__company_logo {
@@ -325,8 +327,9 @@
 .grid--9-10{
 display: block;
 }
-.nope{
-  display:none;
+
+.grid--11-12{
+  display:block;
 }
 .grid__borders{
 display:none;
