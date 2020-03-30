@@ -92,6 +92,14 @@
   width: 8rem;
   overflow: hidden;
   z-index: 1;
+  animation-name:slide_to_the_left;
+  animation-duration:1s;
+}
+
+@keyframes slide_to_the_left{
+  from {left:-100px}
+
+  to {left:0px}
 }
 .side_navigation_mobile__options {
   position: relative;
@@ -110,8 +118,9 @@
 }
 
 .x{
-   display: none; 
+display: none; 
 }
+
 
 
 /*Footer*/
