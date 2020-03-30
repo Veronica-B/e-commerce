@@ -212,6 +212,22 @@
     grid-template-rows: 65vh 10vh 65vh 10vh 65vh 10vh;
     text-align: center;
   }
+
+  .grid--9-10{
+    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 65vh 10vh 65vh 10vh;
+    text-align: center;
+  }
+
+  .grid--11-12{
+    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 65vh 10vh 65vh 10vh 65vh 10vh;
+    text-align: center;
+  }
   .title{
     color:#000066;
     text-align:center;
@@ -306,12 +322,16 @@
 .grid--index{
   display: block;
 }
-
+.grid--9-10{
+display: block;
+}
+.nope{
+  display:none;
+}
 .grid__borders{
 display:none;
 }
   .products {
-    height: 97vh;
     width: 100%;
     border: none;
     border-bottom: solid 1px #000066;
